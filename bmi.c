@@ -22,6 +22,22 @@ int main(void) {
     printf("18.5 a 24.9 | Normal \n");
     printf("25.0 a 29.9 | Sobrepeso \n");
     printf(">=30 | Obesidad \n");
+    
+    if(bmi<18.5){
+        printf("Ud presenta Bajo peso.\n");
+    }else{
+        if(bmi>=18.5 && bmi<=24.9){
+            printf("Ud presenta un peso Normal.\n");
+        }else{
+            if(bmi>=25.0 && bmi<=29.9){
+                printf("Ud presenta Sobrepeso.\n");
+            }else{
+                if(bmi>=30){
+                    printf("Ud presenta Obesidad.\n");
+                }
+            }
+        }
+    }
  
 printf("Hasta luego!\n");
 
