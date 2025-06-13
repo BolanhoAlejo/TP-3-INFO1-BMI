@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+// https://github.com/BolanhoAlejo/TP-3-INFO1-BMI
+
 int main(void) {
     float peso;
     float altura;
