@@ -6,10 +6,20 @@ int main(void) {
     float altura;
 
     printf("CALCULADORA DE MASA CORPORAL\n");
-    printf("Ingrese su peso en Kg: ");
-    scanf("%f", &peso);
-    printf("Ingrese su altura en metros: ");
-    scanf("%f", &altura);
+	do{
+		printf("Ingrese su peso en Kg: ");
+		scanf("%f", &peso);
+		if(peso < 0){
+			printf("Ingrese un peso positivo.\n");
+		}
+	} while(peso < 0);
+	do{
+		printf("Ingrese su altura en metros: ");
+		scanf("%f", &altura);
+		if(altura < 0){
+			printf("Ingrese una altura positiva.\n");
+		}
+	} while(altura < 0);
 
     float bmi = peso / pow(altura, 2);
     bmi = roundf(bmi * 100) / 100;
